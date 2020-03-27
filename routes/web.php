@@ -16,3 +16,4 @@
 //});
 
 route::get('/','IndexController@index');
+route::get('xiqi','IndexController@xiqi');
