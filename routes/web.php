@@ -17,3 +17,13 @@
 
 route::get('/','IndexController@index');
 route::get('xiqi','IndexController@xiqi');
+
+
+// ºóÌ¨µÇÂ¼
+Route::prefix('logins')->group(function () {
+    Route::any('login','logins\LoginsController@login');
+    Route::any('template','logins\LoginsController@template');
+    Route::any('get_access_token','logins\LoginsController@get_access_token');
+    Route::any('dologin','logins\LoginsController@dologin');
+});
+
